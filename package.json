@@ -1,5 +1,5 @@
 {
-  "name": "@chetraj001/meroui",
+  "name": "@meroui/react",
   "version": "1.0.1",
   "description": "The UI library for web perfectionists",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/meroui/meroui.git"
+    "url": "git+ssh://git@github.com:meroui/meroui-react.git"
   },
   "keywords": [
     "meroui",
@@ -28,9 +28,9 @@
   "module": "./index.js",
   "types": "./index.d.ts",
   "bugs": {
-    "url": "https://github.com/meroui/meroui/issues"
+    "url": "https://github.com/meroui/meroui-react/issues"
   },
-  "homepage": "https://github.com/meroui/meroui#readme",
+  "homepage": "https://github.com/meroui/meroui-react#readme",
   "peerDependencies": {
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
