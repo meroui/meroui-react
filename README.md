@@ -1,6 +1,6 @@
 <!-- markdownlint-disable-next-line -->
 
-<h1 align="center">MEROUI - The UI You Love</h1>
+<h1 align="center">MEROUI - The UI For Perfectionists</h1>
 
 **MeroUI** has been designed keeping simplicity and performance in mind. This UI framework was developed by Chet Raj Gautam for his ecommerce startup nepbasket.com and has been shared to open source community with a MIT License 
 
