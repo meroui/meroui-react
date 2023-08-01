@@ -6,7 +6,7 @@
 However you can preview available components in meroui.solerac.com.
 </h4>
 
-**MeroUI** has been designed keeping simplicity and performance in mind. This UI framework was developed by Chet Raj Gautam for his ecommerce startup nepbasket.com and has been shared to open source community with a MIT License 
+**MeroUI** has been designed keeping simplicity and performance in mind. This UI framework was developed by Chet Raj Gautam for his  interests and has been shared to open source community with a MIT License. Just don't create your ui library copying this library's components.
 
 
 <div align="center">
@@ -22,24 +22,24 @@ However you can preview available components in meroui.solerac.com.
 
 ### Npm Package
 
-MeroUI is available as an [npm package](https://www.npmjs.com/package/@chetraj001/meroui) and can be installed directly into your react project
+MeroUI is available as an [npm package](https://www.npmjs.com/package/@meroui/react) and can be installed directly into your react project
 
 **npm:**
 
 ```bash
-npm i @chetraj001/meroui
+npm i @meroui/react
 ```
 
 **yarn:**
 
 ```bash
-yarn add @chetraj001/meroui
+yarn add @meroui/react
 ```
 
 <details>
   <summary>Older versions</summary>
 
-- **[v4.x](https://v1.meroui.soleraccom/)** ([Migration from v0.10 to v1](https://meroui.solerac.com/guides/migration-v1/))
+- **[v4.x](https://meroui.solerac.com/)** ([Migration from v1.0.0 to v1.0.2](https://meroui.solerac.com/guides))
 
 </details>
 
@@ -61,13 +61,13 @@ Use `@latest` for the latest stable release.
 
 See the full list of [our backers](https://meroui.solerac.com/discover-more/backers/).
 
-## Getting started with Material UI
+## Getting started with MeroUI
 
 Here is an example of a basic app using MeroUI's `Button` component:
 
 ```jsx
 import * as React from 'react';
-import Button from '@chetraj001/meroui/Button';
+import Button from '@meroui/react/Button';
 
 function App() {
   return <Button variant="contained">Hello World</Button>;
@@ -87,7 +87,7 @@ There are many other ways to [support MeroUI] beyond contributing to the code ba
 
 ## Changelog
 
-The [changelog](https://github.com/meroui/meroui/releases) is regularly updated to reflect what's changed in each new release.
+The [changelog](https://github.com/meroui/meroui-react/releases) is regularly updated to reflect what's changed in each new release.
 
 
 ## License
@@ -97,5 +97,5 @@ This project is licensed under the terms of the
 
 ## Security
 
-We take any bugs or security concerns very seriously, please refer to our [security policy](https://github.com/meroui/meroui/security/policy).
+We take any bugs or security concerns very seriously, please refer to our [security policy](https://github.com/meroui/meroui-react/security/policy).
 
