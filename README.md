@@ -2,6 +2,10 @@
 
 <h1 align="center">MEROUI - The UI For Perfectionists</h1>
 
+<h2>Meroui is currently on development and is not recommended for use in production environments.
+However you can preview available components in meroui.solerac.com.
+</h2>
+
 **MeroUI** has been designed keeping simplicity and performance in mind. This UI framework was developed by Chet Raj Gautam for his ecommerce startup nepbasket.com and has been shared to open source community with a MIT License 
 
 

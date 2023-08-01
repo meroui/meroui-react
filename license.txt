@@ -1,0 +1,6 @@
+MeroUi is on development phase and comes with MIT license. But until it is approved for production,
+please donot use this package.
+
+You can use MeroUI as much as you want but cannot create Ui library that have same components as MeroUI.
+
+Thanks!

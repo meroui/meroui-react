@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "declaration": true
+    // other options...
+  }
+  // other configurations...
+}

@@ -1,0 +1,60 @@
+{
+  "name": "meroui",
+  "version": "1.0.0",
+  "description": "The UI library for web perfectionists",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/meroui/meroui.git"
+  },
+  "keywords": [
+    "meroui",
+    "reactui",
+    "ui",
+    "library",
+    "mui",
+    "antd",
+    "chakraui"
+  ],
+  "author": "Chet Raj Gautam",
+  "license": "MIT",
+  "funding": {
+    "type": "url",
+    "url": "https://mero-ui.com/donate"
+  },
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "bugs": {
+    "url": "https://github.com/meroui/meroui/issues"
+  },
+  "homepage": "https://github.com/meroui/meroui#readme",
+
+  "peerDependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@types/react": "^17.0.0 || ^18.0.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "@emotion/react": {
+      "optional": true
+    },
+    "@emotion/styled": {
+      "optional": true
+    }
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
