@@ -1,6 +1,6 @@
 {
   "name": "@chetraj001/meroui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The UI library for web perfectionists",
   "main": "index.js",
   "scripts": {
