@@ -1,5 +1,5 @@
 {
-  "name": "meroui",
+  "name": "@chetraj001/meroui",
   "version": "1.0.0",
   "description": "The UI library for web perfectionists",
   "main": "index.js",
@@ -31,7 +31,6 @@
     "url": "https://github.com/meroui/meroui/issues"
   },
   "homepage": "https://github.com/meroui/meroui#readme",
-
   "peerDependencies": {
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
