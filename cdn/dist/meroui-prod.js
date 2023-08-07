@@ -1,0 +1,1 @@
+console.log("Meroui is installed using cdn!")

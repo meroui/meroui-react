@@ -1,0 +1,1 @@
+This folder is dedicated to cdn files for meroui package

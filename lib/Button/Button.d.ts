@@ -9,11 +9,10 @@ export type meroButtonProps = {
     size? : "xs"| "sm" |"md" | "lg"
     fullWidth?: boolean;
     disableElevation? : boolean;
-
 }
 
 
-declare const Button: meroButtonProps;
+declare const Button: React.FC<meroButtonProps>;
 
 
 export default Button;
