@@ -31,6 +31,10 @@
     "url": "https://github.com/meroui/meroui-react/issues"
   },
   "homepage": "https://github.com/meroui/meroui-react#readme",
+  "dependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0"
+  },
   "peerDependencies": {
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
@@ -40,12 +44,6 @@
   },
   "peerDependenciesMeta": {
     "@types/react": {
-      "optional": true
-    },
-    "@emotion/react": {
-      "optional": true
-    },
-    "@emotion/styled": {
       "optional": true
     }
   },
