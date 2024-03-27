@@ -1,17 +1,20 @@
 <!-- markdownlint-disable-next-line -->
+<p align="center">
+  <a href="https://ui.batchnepal.com/" rel="noopener" target="_blank"><img width="150" height="133" src="https://i.ibb.co/Rjng2Jt/batch-ui-logo.png" alt="MUI Core logo"></a>
+</p>
 
 <h1 align="center">MEROUI - The UI For Perfectionists</h1>
 
-<h4>Meroui is currently on development and is not recommended for use in production environments.
+<h4>Note: Meroui is currently on development and is not recommended for use in production environments.
 However you can preview available components in meroui.solerac.com.
 </h4>
 
-**MeroUI** has been designed keeping simplicity and performance in mind. This UI framework was developed by Chet Raj Gautam for his  interests and has been shared to open source community with a MIT License. Just don't create your ui library copying this library's components.
+**MeroUI** has been designed and developed by BatchNepal Consultancy keeping simplicity and performance in mind and as been shared to open source community with a MIT License. 
 
 
 <div align="center">
 
-**[Stable channel v1](https://meroui.com/)**
+**[Stable channel v1](https://ui.bachnepal.com/)**
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mui/material-ui/blob/HEAD/LICENSE)
 
@@ -30,7 +33,7 @@ MeroUI is available as an [npm package](https://www.npmjs.com/package/@meroui/re
 npm i @meroui/react
 ```
 
-**yarn:**
+**yarn:  coming soon**
 
 ```bash
 yarn add @meroui/react
@@ -39,7 +42,7 @@ yarn add @meroui/react
 <details>
   <summary>Older versions</summary>
 
-- **[v4.x](https://meroui.solerac.com/)** ([Migration from v1.0.0 to v1.0.2](https://meroui.solerac.com/guides))
+- **[v4.x](https://ui.batchnepal.com/)** ([Migration from v1.0.0 to v1.0.2](https://ui.batchnepal.com/guides))
 
 </details>
 
@@ -48,7 +51,6 @@ Use `@latest` for the latest stable release.
 
 
 ## Sponsors
-
 
 
 <p>
