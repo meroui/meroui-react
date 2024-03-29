@@ -1,10 +1,19 @@
 {
   "name": "@meroui/react",
-  "version": "1.1.2",
-  "description": "The UI library for React & Next.js perfectionists",
-  "main": "./src/index.ts",
+  "type": "module",
+  "version": "1.1.4",
+  "description": "The Open Source UI library for React & Next.js perfectionists",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "rollup": "rollup -c --bundleConfigAsCjs"
   },
   "repository": {
     "type": "git",
@@ -25,8 +34,6 @@
     "type": "url",
     "url": "https://ui.batchnepal.com/donate"
   },
-  
-
   "bugs": {
     "url": "https://github.com/meroui/meroui-react/issues"
   },
@@ -34,7 +41,6 @@
   "dependencies": {
     "clsx": "^2.1.0",
     "csstype": "^3.1.3",
-    "prop-types": "^15.8.1",
     "react-is": "^18.2.0"
   },
   "peerDependencies": {
@@ -47,20 +53,34 @@
   "peerDependenciesMeta": {
     "@types/react": {
       "optional": true
-    },
-    "@emotion/react": {
-      "optional": true
-    },
-    "@emotion/styled": {
-      "optional": true
     }
   },
   "sideEffects": false,
   "publishConfig": {
-    "access": "public",
-    "directory": "build"
+    "access": "public"
   },
   "engines": {
     "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.2.25",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@storybook/addon-essentials": "^8.0.5",
+    "@storybook/addon-interactions": "^8.0.5",
+    "@storybook/addon-links": "^8.0.5",
+    "@storybook/addon-onboarding": "^8.0.5",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+    "@storybook/blocks": "^8.0.5",
+    "@storybook/react": "^8.0.5",
+    "@storybook/react-webpack5": "^8.0.5",
+    "@storybook/test": "^8.0.5",
+    "@types/aria-query": "^5.0.4",
+    "prop-types": "^15.8.1",
+    "rollup": "^4.13.2",
+    "rollup-plugin-dts": "^6.1.0",
+    "storybook": "^8.0.5"
   }
 }

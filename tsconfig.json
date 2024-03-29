@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "module": "esnext",
-    "target": "es5",
-    "lib": ["es2020", "dom"],
-    "jsx": "preserve",
+    "module": "ESNext",
+    "outDir": "./dist",
+    "jsx": "react",
     "moduleResolution": "node",
+    "declaration": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "noEmit": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true
-  }
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true
+  },
+  "exclude": ["node_modules", "dist", "types"]
 }

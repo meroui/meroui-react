@@ -1,4 +1,5 @@
 /** @jsxImportSource @emotion/react */
+/** @jsxRuntime automatic */
 import React, { HTMLAttributes } from 'react';
 import { css } from '@emotion/react';
 // import clsx from 'clsx';

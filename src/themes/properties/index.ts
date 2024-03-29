@@ -1,1 +1,0 @@
-export { MeroUIColors } from './colors';
