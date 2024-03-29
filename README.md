@@ -6,7 +6,7 @@
 <h1 align="center">MEROUI - The UI For Perfectionists</h1>
 
 <h4>Note: Meroui is currently on development and is not recommended for use in production environments.
-However you can preview available components in meroui.solerac.com.
+However you can preview available components in ui.batchnepal.com.
 </h4>
 
 **MeroUI** has been designed and developed by BatchNepal Consultancy keeping simplicity and performance in mind and as been shared to open source community with a MIT License. 
@@ -61,7 +61,7 @@ Use `@latest` for the latest stable release.
 
 ### More backers
 
-See the full list of [our backers](https://meroui.solerac.com/discover-more/backers/).
+See the full list of [our backers](https://ui.batchnepal.com/sponsors/).
 
 ## Getting started with MeroUI
 

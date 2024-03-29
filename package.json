@@ -1,6 +1,6 @@
 {
   "name": "@meroui/react",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "The UI library for React & Next.js perfectionists",
   "main": "./src/index.ts",
   "scripts": {
@@ -26,9 +26,6 @@
     "url": "https://ui.batchnepal.com/donate"
   },
   
-  "module": "./index.js",
-  "types": "./index.d.ts",
-
 
   "bugs": {
     "url": "https://github.com/meroui/meroui-react/issues"
