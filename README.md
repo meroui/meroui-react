@@ -52,11 +52,11 @@ Use `@latest` for the latest stable release.
 
 ## Sponsors
 
-
 <p>
-  <a href="https://solerac.com" rel="noopener sponsored" target="_blank"><img height="128" width="128" src="solerac.com/assets/images/logo.png" alt="solerac" title="Earn money online in nepal" loading="lazy" /></a>
+  <a href="https://batchnepal.com?ref=meroui" rel="noopener sponsored" target="_blank"><img height="128" width="128" src="https://i.ibb.co/LhsyWNN/batchnepal-logo.png" alt="batchnepal"  loading="lazy" /></a>
   
 </p>
+
 
 
 ### More backers
