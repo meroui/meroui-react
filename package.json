@@ -1,23 +1,25 @@
 {
   "name": "@meroui/react",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "The Open Source UI library for React & Next.js perfectionists",
   "main": "dist/index/index.js",
-  "module": "dist/index.esm.js",
+  "type": "commonjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "test": "npm run test",
+    "tsc": "tsc",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "rollup": "rollup -c --bundleConfigAsCjs",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "chromatic": "npx chromatic --project-token=chpt_14570bacf1c3c03"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:meroui/meroui-react.git"
+    "url": "git+ssh://git@github.com/meroui/meroui-react.git"
   },
   "keywords": [
     "meroui",
@@ -28,7 +30,9 @@
     "antd",
     "mui"
   ],
-  "author": "Chet Raj Gautam & BatchNepal",
+  "author": {
+    "name": "Chet Raj Gautam & BatchNepal"
+  },
   "license": "MIT",
   "funding": {
     "type": "url",
@@ -71,6 +75,7 @@
     "@babel/preset-react": "^7.24.1",
     "@babel/preset-typescript": "^7.24.1",
     "@chromatic-com/storybook": "^1.2.25",
+    "@emotion/babel-preset-css-prop": "^11.11.0",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
@@ -87,6 +92,7 @@
     "@storybook/test": "^8.0.5",
     "@types/aria-query": "^5.0.4",
     "babel-loader": "^9.1.3",
+    "chromatic": "^11.3.0",
     "prop-types": "^15.8.1",
     "react-is": "^18.2.0",
     "rollup": "^4.13.2",

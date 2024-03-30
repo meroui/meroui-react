@@ -12,16 +12,18 @@ module.exports = {
     filename: '[name]/[name].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist/',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    library: '@meroui/react'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        exclude: /node_modules/,
+        exclude: [/node_modules/, /src\stories/],
         use: [
           {
             loader: 'babel-loader'
@@ -45,5 +47,8 @@ module.exports = {
         }
       })
     ]
+  },
+  externals: {
+    react: 'react'
   }
 }

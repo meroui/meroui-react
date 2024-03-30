@@ -5,7 +5,7 @@ import { css } from '@emotion/react';
 // import clsx from 'clsx';
 
 
-interface SkeletonProps extends HTMLAttributes<HTMLSpanElement> {
+export interface SkeletonProps {
   /**
  * The background color of skeleton.
  * @default '#0000001c'
@@ -171,12 +171,12 @@ const Skeleton: React.FC<SkeletonProps> = (props) => {
   `
 
   return (
-    <span
+    <div
       css={animation == "pulse" ? pulseSkeletonStyle : animation == "wave" ? waveSkeletonStyle : animation === "shimmer" ? shimmerSkeletonStyle : " "}
       {...other}
     >
       {children}
-    </span>
+    </div>
   )
 };
 

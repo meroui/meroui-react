@@ -1,2 +1,2 @@
-export * from "./Skeleton";
-export { default  } from './Skeleton';
+import Skeleton from "./Skeleton";
+export default Skeleton;
