@@ -5,3 +5,4 @@ tests
 useless
 src
 .storybook
+webpack.config.js

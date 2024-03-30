@@ -1,15 +1,25 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "outDir": "./dist",
-    "jsx": "react",
-    "moduleResolution": "node",
-    "declaration": true,
+    "module": "CommonJS",
+    "target": "ES5",
+    "lib": ["ES2020", "DOM"],
+    "jsx": "preserve",
+    "moduleResolution": "Node",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "noEmit": false,
     "experimentalDecorators": true,
+    "baseUrl": "./",
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
+    "noErrorTruncation": false,
+    "allowJs": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "paths": {
+      "@meroui/react": ["./src"]
+    },
+    "types": ["node", "react"]
   },
-  "exclude": ["node_modules", "dist", "types"]
+  "include": ["src/**/*"],
+  "exclude": ["dist", "tests/**/*", "node_modules"]
 }

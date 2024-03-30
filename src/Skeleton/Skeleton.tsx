@@ -5,7 +5,7 @@ import { css } from '@emotion/react';
 // import clsx from 'clsx';
 
 
-export interface SkeletonProps extends HTMLAttributes<HTMLSpanElement> {
+interface SkeletonProps extends HTMLAttributes<HTMLSpanElement> {
   /**
  * The background color of skeleton.
  * @default '#0000001c'

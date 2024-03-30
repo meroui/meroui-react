@@ -1,19 +1,19 @@
 {
   "name": "@meroui/react",
-  "type": "module",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "The Open Source UI library for React & Next.js perfectionists",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
+  "main": "dist/index/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "npm run test",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "rollup": "rollup -c --bundleConfigAsCjs"
+    "rollup": "rollup -c --bundleConfigAsCjs",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
   "dependencies": {
     "clsx": "^2.1.0",
     "csstype": "^3.1.3",
-    "react-is": "^18.2.0"
+    "terser-webpack-plugin": "^5.3.10"
   },
   "peerDependencies": {
     "@emotion/react": "^11.5.0",
@@ -53,6 +53,9 @@
   "peerDependenciesMeta": {
     "@types/react": {
       "optional": true
+    },
+    "react-is": {
+      "optional": true
     }
   },
   "sideEffects": false,
@@ -63,7 +66,12 @@
     "node": ">=12.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
     "@chromatic-com/storybook": "^1.2.25",
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
@@ -78,9 +86,15 @@
     "@storybook/react-webpack5": "^8.0.5",
     "@storybook/test": "^8.0.5",
     "@types/aria-query": "^5.0.4",
+    "babel-loader": "^9.1.3",
     "prop-types": "^15.8.1",
+    "react-is": "^18.2.0",
     "rollup": "^4.13.2",
     "rollup-plugin-dts": "^6.1.0",
-    "storybook": "^8.0.5"
+    "storybook": "^8.0.5",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }
