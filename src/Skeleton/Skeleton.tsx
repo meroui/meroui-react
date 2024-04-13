@@ -2,10 +2,9 @@
 /** @jsxRuntime automatic */
 import React, { HTMLAttributes } from 'react';
 import { css } from '@emotion/react';
-// import clsx from 'clsx';
 
 
-export interface SkeletonProps {
+export interface SkeletonProps extends HTMLAttributes<HTMLDivElement> {
   /**
  * The background color of skeleton.
  * @default '#0000001c'
@@ -34,7 +33,7 @@ export interface SkeletonProps {
    * The type of content that will be rendered.
    * @default 'rectangular'
    */
-  variant: 'rectangular' | 'rounded' | 'circular';
+  variant?: 'rectangular' | 'rounded' | 'circular';
   /**
    * Width of the skeleton. eg: 100px, 100%, 50vw.
    * Takes full width of element by default just like divs. 
@@ -74,7 +73,7 @@ const Skeleton: React.FC<SkeletonProps> = (props) => {
       height: ${height ?? "90px"};
       width: ${width ?? "100%"};
       overflow: hidden;
-      animation: pulse 2s ease-in-out 0.5s infinite;
+      animation: pulse ${animationDuration ?? "2s"} ease-in-out 0.5s infinite;
         
       @keyframes pulse {
         0% {
@@ -104,7 +103,7 @@ const Skeleton: React.FC<SkeletonProps> = (props) => {
     }
 
     &::after {
-      -webkit-animation: wave 2s linear 0.5s infinite;
+      -webkit-animation: wave  ${animationDuration ?? "2s"} linear 0.5s infinite;
       animation: wave 2s linear 0.5s infinite;
       background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.04), transparent);
       content: '';
@@ -161,7 +160,7 @@ const Skeleton: React.FC<SkeletonProps> = (props) => {
       width: 100%;
       height: 100%;
       background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.04), transparent);
-      animation: shimmer 2s infinite linear;
+      animation: shimmer  ${animationDuration ?? "2s"} infinite linear;
     }
     @keyframes shimmer {
       100% {
@@ -171,8 +170,8 @@ const Skeleton: React.FC<SkeletonProps> = (props) => {
   `
 
   return (
-    <div
-      css={animation == "pulse" ? pulseSkeletonStyle : animation == "wave" ? waveSkeletonStyle : animation === "shimmer" ? shimmerSkeletonStyle : " "}
+    <div className={className ?? " "}
+      css={animation == "wave" ? waveSkeletonStyle : animation === "shimmer" ? shimmerSkeletonStyle : pulseSkeletonStyle}
       {...other}
     >
       {children}

@@ -1,31 +1,30 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ESNext",
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "jsx": "react-jsx",
-    "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noEmit": false,
-    "experimentalDecorators": true,
-    "baseUrl": "./",
-    "allowSyntheticDefaultImports": true,
-    "noErrorTruncation": false,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "isolatedModules": true,
-    "declaration": true,
-    "declarationDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "noFallthroughCasesInSwitch": true,
-
-    "paths": {
-      "@meroui/react": ["./src"]
-    },
-    "types": ["node", "react"]
+    "isolatedModules": true,
+    "jsx": "react",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["dist", "tests/**/*", "node_modules"]
+  "include": ["src"],
+
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.stories.tsx",
+    "./src/setupTests.ts"
+  ]
 }

@@ -6,3 +6,4 @@ useless
 src
 .storybook
 webpack.config.js
+stories

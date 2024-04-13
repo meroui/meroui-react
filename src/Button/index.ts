@@ -1,3 +1,3 @@
-import Button from "./Button";
-
-export default Button;
+'use client';
+export { default } from './Button';
+export * from './ButtonProps';

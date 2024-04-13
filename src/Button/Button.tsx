@@ -1,13 +1,15 @@
 import * as React from 'react'
+import type { ButtonProps } from './ButtonProps'
 
-export interface Buttonprops {
-    btnText: string
-}
 
-const Button: React.FC<Buttonprops> = (prop) => {
-    return (
-        <button >{prop.btnText}</button>
-    )
-}
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function Button(inProps, ref) {
 
-export default Button
+
+    const props = inProps;
+
+    return <button>
+        {props.btnText}
+    </button>
+
+})
+export default Button;

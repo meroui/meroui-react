@@ -1,21 +1,22 @@
 {
   "name": "@meroui/react",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "The Open Source UI library for React & Next.js perfectionists",
-  "main": "dist/index/index.js",
-  "type": "commonjs",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
+    "build": "tsc --build \"./tsconfig.json\"",
     "test": "npm run test",
-    "tsc": "tsc",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "rollup": "rollup -c --bundleConfigAsCjs",
-    "build": "webpack --mode production",
-    "chromatic": "npx chromatic --project-token=chpt_14570bacf1c3c03"
+    "chromatic": "npx chromatic --project-token=chpt_14570bacf1c3c03",
+    "build:storybook": "build-storybook -s public",
+    "eject": "react-scripts eject",
+    "prepublish": "npm run build",
+    "start:storybook": "start-storybook -p 6006 -s public"
   },
   "repository": {
     "type": "git",
@@ -45,7 +46,8 @@
   "dependencies": {
     "clsx": "^2.1.0",
     "csstype": "^3.1.3",
-    "terser-webpack-plugin": "^5.3.10"
+    "terser-webpack-plugin": "^5.3.10",
+    "write-file-webpack-plugin": "^4.5.1"
   },
   "peerDependencies": {
     "@emotion/react": "^11.5.0",
@@ -71,9 +73,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.3",
+    "@babel/plugin-transform-runtime": "^7.24.3",
     "@babel/preset-env": "^7.24.3",
     "@babel/preset-react": "^7.24.1",
     "@babel/preset-typescript": "^7.24.1",
+    "@babel/runtime": "^7.24.1",
     "@chromatic-com/storybook": "^1.2.25",
     "@emotion/babel-preset-css-prop": "^11.11.0",
     "@rollup/plugin-babel": "^6.0.4",
