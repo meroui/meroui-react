@@ -1,9 +1,10 @@
 {
   "name": "@meroui/react",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "The Open Source UI library for React & Next.js perfectionists",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "module": "dist/index.js",
   "files": [
     "dist"
   ],
@@ -44,10 +45,9 @@
   },
   "homepage": "https://ui.batchnepal.com",
   "dependencies": {
+    "@fontsource/roboto": "^5.0.12",
     "clsx": "^2.1.0",
-    "csstype": "^3.1.3",
-    "terser-webpack-plugin": "^5.3.10",
-    "write-file-webpack-plugin": "^4.5.1"
+    "csstype": "^3.1.3"
   },
   "peerDependencies": {
     "@emotion/react": "^11.5.0",
@@ -73,6 +73,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.3",
+    "terser-webpack-plugin": "^5.3.10",
+    "write-file-webpack-plugin": "^4.5.1",
     "@babel/plugin-transform-runtime": "^7.24.3",
     "@babel/preset-env": "^7.24.3",
     "@babel/preset-react": "^7.24.1",
@@ -98,10 +100,12 @@
     "babel-loader": "^9.1.3",
     "chromatic": "^11.3.0",
     "prop-types": "^15.8.1",
+    "react-icons": "^5.1.0",
     "react-is": "^18.2.0",
     "rollup": "^4.13.2",
     "rollup-plugin-dts": "^6.1.0",
     "storybook": "^8.0.5",
+    "styled-components": "^6.1.8",
     "ts-loader": "^9.5.1",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",

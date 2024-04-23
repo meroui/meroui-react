@@ -5,7 +5,7 @@
 
 <h1 align="center">MEROUI - The UI For Perfectionists</h1>
 
-<h4>Note: Meroui is currently on development and is not recommended for use in production environments.
+<h4>Note: Meroui can be used in production environments from 24th april 2024 but there are still many componenets to be added.
 However you can preview available components in ui.batchnepal.com.
 </h4>
 
@@ -30,7 +30,7 @@ MeroUI is available as an [npm package](https://www.npmjs.com/package/@meroui/re
 **npm:**
 
 ```bash
-npm i @meroui/react
+npm install @meroui/react
 ```
 
 **yarn:  coming soon**
@@ -69,10 +69,10 @@ Here is an example of a basic app using MeroUI's `Button` component:
 
 ```jsx
 import * as React from 'react';
-import Button from '@meroui/react/Button';
+import { Button } from '@meroui/react';
 
 function App() {
-  return <Button variant="contained">Hello World</Button>;
+  return <Button variant="outlined" color="success" disableRipple={true} rounded="full" >Hello World</Button>;
 }
 ```
 
@@ -95,7 +95,7 @@ The [changelog](https://github.com/meroui/meroui-react/releases) is regularly up
 ## License
 
 This project is licensed under the terms of the
-[MIT license](/LICENSE). You are allowed to freely use it but never allowed to create your ui framework that copies our components okay 😘
+[MIT license](/LICENSE). You can use it freely on personal to enterprise projects. 😘
 
 ## Security
 
