@@ -24,6 +24,6 @@ const Item: React.FC<ItemProps> = ({ height = "auto", width = "auto" }) => (
 
 Loader.Item = Item;
 
-Loader.displayName = "batchui-loader";
+Loader.displayName = "meroui-loader";
 
 export { Loader };

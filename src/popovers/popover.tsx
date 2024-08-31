@@ -64,7 +64,7 @@ export const Popover = (props: TPopover) => {
         leaveTo="opacity-0 translate-y-1"
       >
         <HeadlessReactPopover.Panel
-          ref={setPopperElement}
+          ref={setPopperElement as React.Ref<any>}
           style={styles.popper}
           {...attributes.popper}
           className={cn("absolute left-0 top-full z-20 w-screen max-w-xs mt-2", panelClassName)}

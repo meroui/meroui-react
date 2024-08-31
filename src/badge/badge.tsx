@@ -40,6 +40,6 @@ const Badge = React.forwardRef<HTMLButtonElement, BadgeProps>((props, ref) => {
   );
 });
 
-Badge.displayName = "batchui-badge";
+Badge.displayName = "meroui-badge";
 
 export { Badge };

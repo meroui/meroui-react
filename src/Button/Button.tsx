@@ -40,6 +40,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => 
   );
 });
 
-Button.displayName = "batchui-button";
+Button.displayName = "meroui-button";
 
 export { Button };

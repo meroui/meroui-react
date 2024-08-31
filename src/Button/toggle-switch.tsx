@@ -51,6 +51,6 @@ const ToggleSwitch: React.FC<IToggleSwitchProps> = (props) => {
   );
 };
 
-ToggleSwitch.displayName = "batchui-toggle-switch";
+ToggleSwitch.displayName = "meroui-toggle-switch";
 
 export { ToggleSwitch };
