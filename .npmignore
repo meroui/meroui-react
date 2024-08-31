@@ -2,8 +2,16 @@ node_modules
 cdn
 .github
 tests
-useless
 src
 .storybook
 webpack.config.js
 stories
+package-lock.json
+tailwind.config.js
+postcss.config.js
+helpers.ts
+.prettierrc
+.prettyignore
+tsconfig.json
+styles
+tsconfig
